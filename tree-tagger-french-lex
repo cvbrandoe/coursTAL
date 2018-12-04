@@ -1,0 +1,18 @@
+#!/bin/sh
+
+# Set these paths appropriately
+
+BIN=/home/cvbrandoe/tools/tree-tagger/bin
+CMD=/home/cvbrandoe/tools/tree-tagger/cmd
+LIB=/home/cvbrandoe/tools/tree-tagger/lib
+LEX=/home/cvbrandoe/tools/tree-tagger/lex.txt
+
+OPTIONS="-token -lemma -sgml"
+
+TOKENIZER=${CMD}/utf8-tokenize.perl
+TAGGER=${BIN}/tree-tagger
+ABBR_LIST=${LIB}/french-abbreviations-utf8
+PARFILE=${LIB}/french-utf8.par
+
+$TOKENIZER -f -a $ABBR_LIST $* |
+$TAGGER $OPTIONS $PARFILE -lex $LEX
