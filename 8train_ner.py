@@ -12,7 +12,7 @@ Last tested with: v2.1.0
 """
 from __future__ import unicode_literals, print_function
 
-import plac
+import plac, glob, codecs, ast
 import random
 from pathlib import Path
 import spacy
@@ -20,10 +20,7 @@ from spacy.util import minibatch, compounding
 
 
 # training data
-TRAIN_DATA = [
-    ("Qui est-ce Claude ?", {"entities": [(11, 16, "PER")]}),
-]
-
+TRAIN_DATA = []
 
 @plac.annotations(
 	model=("Model name. Defaults to blank 'fr' model.", "option", "m", str),
@@ -48,6 +45,16 @@ def main(model=None, output_dir=None, n_iter=100):
 	else:
 		ner = nlp.get_pipe("ner")
 
+	# Load annotations into model
+	for x in range(10):
+		train_files = glob.glob("ZolaLVP_1tier_AnnSents/group"+str(x)+"/*.txt")
+		for j in train_files:
+		#print("reading "+j)
+			with codecs.open(j, 'r+', encoding='utf8') as train_f:
+				train_l = ast.literal_eval('[{0}]'.format(train_f.read()))
+				TRAIN_DATA.extend(train_l[0]) 
+	print("nb of sentences in the training dataset: "+str(len(TRAIN_DATA)))
+	
 	# add labels
 	for _, annotations in TRAIN_DATA:
 		for ent in annotations.get("entities"):
