@@ -1,0 +1,4 @@
+Lire puis exécuter le code dans 7ner.py pour charger un modèle de Spacy pour le français puis annoter le texte balzac-Cesar-Birroteau-chapII.txt
+$ python3 7ner.py
+Lire puis exécuter le code dans 8train_ner.py pour créer un modèle personnalisé à partir des annotations issues des premiers tiers des chap du roman Le Ventre de Paris (dossier “ZolaLVP_1tier_AnnSents”) puis annoter le texte correspondant au dernier tier du chap 1 de ce roman (‘le-ventre-de-paris_1-3.txt’) 
+$ python3 8train_ner.py -o model_out
