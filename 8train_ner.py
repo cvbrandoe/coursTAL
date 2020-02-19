@@ -47,7 +47,7 @@ def main(model=None, output_dir=None, n_iter=100):
 
 	# Load annotations into model
 	for x in range(10):
-		train_files = glob.glob("ZolaLVP_1tier_AnnSents/group"+str(x)+"/*.txt")
+		train_files = glob.glob("../ZolaLVP_1tier_AnnSents/group"+str(x)+"/*.txt")
 		for j in train_files:
 		#print("reading "+j)
 			with codecs.open(j, 'r+', encoding='utf8') as train_f:
@@ -79,7 +79,7 @@ def main(model=None, output_dir=None, n_iter=100):
 					drop=0.5,  # dropout - make it harder to memorise data
 					losses=losses,
 				)
-			#print("Losses", losses)
+			print("Losses", losses)
 
 	# test the trained model
 	for text, _ in TRAIN_DATA:
@@ -106,7 +106,7 @@ def main(model=None, output_dir=None, n_iter=100):
 		print("annotate new text with the saved model")
 		print("Loading model from", output_dir)
 		nlp2 = spacy.load(output_dir)
-		fnew = open("le-ventre-de-paris_1-3.txt")
+		fnew = open("../le-ventre-de-paris_1-3.txt")
 		lines_fnew = fnew.read()
 		doc_new = nlp2(lines_fnew)
 		print("Entities found in le-ventre-de-paris_1-3.txt")
