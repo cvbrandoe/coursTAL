@@ -1,0 +1,35 @@
+#Unigraph
+SIZE 1887 879
+FONT Times New Roman:  10
+OFONT Arial Unicode MS:B 12
+BCOLOR 16777215
+FCOLOR 0
+ACOLOR 13487565
+SCOLOR 11228930
+CCOLOR 255
+DBOXES y
+DFRAME n
+DDATE n
+DFILE n
+DDIR n
+DRIG n
+DRST n
+FITS 100
+PORIENT L
+#
+15
+"<E>" 72 362 2 3 2 
+"" 1054 364 0 
+"rue+avenue+boulevard+passage/{" 203 362 1 8 
+"<NB>/{" 160 248 1 7 
+"<E>" 571 362 2 9 10 
+"de+d'+du+de la+de l'+des+le+la+les+l'" 478 246 1 4 
+"<E>/,.Adresse+grfrue}" 972 364 1 1 
+"rue+avenue+boulevard" 251 248 1 8 
+"<E>" 373 362 2 4 5 
+"<DateAbsolue>+<DateRelative>+<Ville>" 733 307 1 6 
+"$<" 678 416 1 13 
+"<LETTER>" 802 416 2 12 11 
+"$>" 890 416 1 6 
+"<UPPER>" 720 416 1 11 
+"Tutoriel Unitex-CasSys+Denis Maurel+Université de Tours" 200 117 0 

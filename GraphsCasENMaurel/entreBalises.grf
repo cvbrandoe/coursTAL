@@ -1,0 +1,30 @@
+#Unigraph
+SIZE 1887 879
+FONT Times New Roman:  10
+OFONT Arial Unicode MS:B 12
+BCOLOR 16777215
+FCOLOR 0
+ACOLOR 13487565
+SCOLOR 10040064
+CCOLOR 255
+DBOXES y
+DFRAME n
+DDATE n
+DFILE n
+DDIR n
+DRIG n
+DRST n
+FITS 100
+PORIENT L
+#
+10
+"<E>" 110 239 1 2 
+"" 557 239 0 
+"<E>" 171 239 2 4 5 
+"<E>" 488 239 2 8 1 
+"<NB>+'" 315 239 1 3 
+"$<" 271 300 1 6 
+"<MOT>" 318 300 2 7 6 
+"$>" 406 300 1 3 
+"<E>" 319 163 1 2 
+"Tutoriel Unitex-CasSys+Denis Maurel+Université de Tours" 96 69 0 

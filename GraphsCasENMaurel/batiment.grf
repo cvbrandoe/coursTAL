@@ -1,0 +1,33 @@
+#Unigraph
+SIZE 1887 879
+FONT Times New Roman:  10
+OFONT Arial Unicode MS:B 12
+BCOLOR 16777215
+FCOLOR 0
+ACOLOR 13487565
+SCOLOR 11228930
+CCOLOR 255
+DBOXES y
+DFRAME n
+DDATE n
+DFILE n
+DDIR n
+DRIG n
+DRST n
+FITS 100
+PORIENT L
+#
+13
+"<E>" 72 362 1 2 
+"" 1025 362 0 
+"hôpital+théâtre+maison communale/{" 116 362 1 6 
+"<E>" 437 362 2 7 8 
+"de+d'+du+de la+de l'+des+le+la+les+l'" 344 246 1 3 
+"<E>/,.Batiment+grfbatiment}" 943 362 1 1 
+"<E>" 265 362 2 3 4 
+"<DateAbsolue>+<DateRelative>+<Ville>" 627 293 1 5 
+"$<" 572 402 1 11 
+"<LETTER>" 696 402 2 10 9 
+"$>" 784 402 1 5 
+"<UPPER>" 614 402 1 9 
+"Tutoriel Unitex-CasSys+Denis Maurel+Université de Tours" 116 185 0 
