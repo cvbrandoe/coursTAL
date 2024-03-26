@@ -1,4 +1,0 @@
-inouïs	ADJ	inouï
-inouï	ADJ	inouï
-inouïe	ADJ	inouï
-inouïes	ADJ	inouï
